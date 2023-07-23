@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl University - Bachelor of Engineering</title>
+    <link rel="stylesheet" href="./CSS/Karl.css">
+    <link rel="stylesheet" href="./CSS/en.css">
+
+</head>
+<body>
+    <header>
+        <h1>Karl University</h1>
+        <nav>
+            <ul>
+                <li><a href="karl.html">Home</a></li>
+                <li><a href="karl.html #programs">Programs</a></li>
+                <li><a href="karl.html #admissions">Admissions</a></li>
+                <li><a href="karl.html #contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+
+        <section id="program-details">
+            <div class="program-content">
+                <h2>Bachelor of Engineering</h2>
+                <p>The Bachelor of Engineering program at Karl University offers a comprehensive and rigorous education in engineering principles and practices. Students will explore various engineering disciplines, including electrical, mechanical, civil, and more.</p>
+                <p>Our program emphasizes hands-on learning, with state-of-the-art labs and facilities to provide students with practical experience. Graduates will be well-prepared for successful careers in engineering, construction, project management, and other related fields.</p>
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Experienced faculty with industry expertise</li>
+                    <li>Modern engineering labs and equipment</li>
+                    <li>Internship opportunities with leading engineering firms</li>
+                    <li>Industry partnerships and networking events</li>
+                    <li>Opportunities for research and innovation</li>
+                </ul>
+                <h3>Curriculum</h3>
+                <p>The curriculum is designed to provide a solid foundation in engineering principles and includes specialized courses in various engineering disciplines, such as:</p>
+                <ul>
+                    <li>Introduction to Engineering</li>
+                    <li>Engineering Mathematics</li>
+                    <li>Mechanics and Materials</li>
+                    <li>Electrical Circuits</li>
+                    <li>Thermodynamics</li>
+                    <li>Structural Analysis</li>
+                    <li>Fluid Mechanics</li>
+                    <li>Control Systems</li>
+                    <li>Environmental Engineering</li>
+                </ul>
+                <h3>Admission Requirements</h3>
+                <ul>
+                    <li>High school diploma or equivalent</li>
+                    <li>Minimum GPA of 3.2</li>
+                    <li>Strong background in mathematics and science</li>
+                    <li>Letters of recommendation</li>
+                    <li>Personal statement</li>
+                </ul>
+                <button class="cta-button" onclick="showWelcomePrompt()">Apply Now</button>
+                <p></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Karl University. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showWelcomePrompt() {
+            const userName = prompt("Please enter your name:");
+            if (userName) {
+                const Email = prompt("your email:");
+            if (Email) {
+                const GPA = prompt("GPA: ");
+                if (GPA){
+                    const welcomeMessage = document.createElement("p");
+                welcomeMessage.textContent = `Welcome, ${userName}! We have taken your registration and will send it to you via email.`;
+                const welcomeDiv = document.querySelector("#program-details");
+                welcomeDiv.appendChild(welcomeMessage);
+                }
+            }
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
